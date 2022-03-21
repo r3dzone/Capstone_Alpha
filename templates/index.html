@@ -1,0 +1,23 @@
+
+{% extends 'partials/base.html' %}
+
+{% load static %}
+{% block extra_css %}
+{% endblock extra_css %}
+{% block header %}
+{% include 'partials/navbar_main.html'%}
+{% include 'partials/sidebar.html' %}
+{% endblock header %}
+
+
+{% block content %}
+<div class="page-wrapper">
+
+{% include 'partials/machine_list.html' %}
+</div>
+
+{% endblock content %}
+{% block extra_javascript %}
+
+{% endblock extra_javascript %}
+
